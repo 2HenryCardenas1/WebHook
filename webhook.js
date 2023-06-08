@@ -40,6 +40,10 @@ axios
     console.error(error);
   });
 
+app.get("/webhook.log", (req, res) => {
+  res.send(fs.readFileSync(LOG_FILE, "utf8"));
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });
