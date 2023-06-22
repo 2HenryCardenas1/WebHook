@@ -6,7 +6,7 @@ const formatDate = require("./formatDate");
 const app = express(); // Initialize the express app
 const PORT = process.env.PORT || 3000;
 const LOG_FILE = "webhook.log";
-const URL = "https://datosprueba-7893.twil.io/datosPrueba.json";
+
 
 app.use(express.json()); // For parsing application/json
 
